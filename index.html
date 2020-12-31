@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Gallery</title>
+    <!-- 1. Next you should include the link for the swiper from "get started" and the cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.css"
+    />
+    <!-- Put your own stylesheet but make sure it always comes after the cdn so it doesn't override it -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Let us make a navigation with popmotion and have a header to make things that will move around-->
+
+    <nav class="main-nav">
+      <h1 class="brand">🐶</h1>
+    </nav>
+    <!-- 3. Let's now try to create divs for the html and follow the get started stuff on swiper -->
+
+    <!-- slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.21 AM (1).jpeg"
+            alt="Pic 1"
+            class="gallery-img active"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.25 AM.jpeg"
+            alt="pic 2"
+            class="gallery-img active"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.27 AM (1).jpeg"
+            alt="pic 3"
+            class="gallery-img active"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.28 AM (1).jpeg"
+            alt="pic 4"
+            class="gallery-img active"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.28 AM.jpeg"
+            alt="pic 5"
+            class="gallery-img active"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/WhatsApp Image 2020-09-28 at 9.57.29 AM.jpeg"
+            alt="pic 6"
+            class="gallery-img active"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 2. paste the link for the javascript cdn too -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.js"></script>
+
+    <!-- The popmotion script goes here...only has to be above mygallery js -->
+
+    <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.global.min.js"></script>
+
+    <!-- Put your own javascript but make sure it always comes after the cdn so it doesn't override it -->
+    <script src="my-gallery.js"></script>
+  </body>
+</html>
